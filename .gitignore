@@ -14,7 +14,7 @@ local.properties
 .recommenders
 
 #Debugging
-.stackdump
+*.stackdump
 
 # External tool builders
 .externalToolBuilders/
@@ -92,6 +92,11 @@ local.properties
 *.exe
 *.out
 *.app
+
+# Doxygen
+*.Algorithm
+html/
+latex/
 
 # Etc
 RemoteSystemsTempFiles/
