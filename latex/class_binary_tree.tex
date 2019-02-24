@@ -1,0 +1,305 @@
+\hypertarget{class_binary_tree}{}\section{Binary\+Tree$<$ T $>$ Class Template Reference}
+\label{class_binary_tree}\index{Binary\+Tree$<$ T $>$@{Binary\+Tree$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Binary\+Tree.\+hpp$>$}
+
+
+
+Collaboration diagram for Binary\+Tree$<$ T $>$\+:
+% FIG 0
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_binary_tree_1_1st_b_t_node}{st\+B\+T\+Node}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct_binary_tree_1_1st_b_t_node}{st\+B\+T\+Node} \hyperlink{class_binary_tree_a626c02fa72521fa5977d10d8785552f7}{B\+T\+Node}
+\item 
+typedef struct \hyperlink{struct_binary_tree_1_1st_b_t_node}{st\+B\+T\+Node} $\ast$ \hyperlink{class_binary_tree_a35ef67d8ee2843144c5c309c5a6ecd5b}{B\+T\+Node\+\_\+ptr}
+\item 
+typedef unsigned int \hyperlink{class_binary_tree_a6c9d1d57bf13ca658fe926a0c7255ecf}{node\+\_\+size}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_binary_tree_a9202cce23960faf8f647c6765decccd4}{Binary\+Tree} ()
+\item 
+virtual \hyperlink{class_binary_tree_a390c319c0b28b958463851119edb8af3}{$\sim$\+Binary\+Tree} ()
+\item 
+void \hyperlink{class_binary_tree_a83692b11e275f9843f74218aca54f939}{clear} (void)
+\item 
+bool \hyperlink{class_binary_tree_a9e4e37cf93a96c3177d8bf00ee1ba664}{is\+Data} (T e)
+\item 
+bool \hyperlink{class_binary_tree_a5d45e29e4a1fae4a7c5e9810b5d04475}{add} (T data)
+\item 
+bool \hyperlink{class_binary_tree_a389dc4035bb6b6f1d8ca160cc487955c}{erase} (void)
+\item 
+T \hyperlink{class_binary_tree_ab428c078bc0d60bc99ebd6eebfb5bd89}{first} (void)
+\item 
+T \hyperlink{class_binary_tree_a1328c1a57e0e5e0a18440a95d3e10e89}{last} (void)
+\item 
+\hyperlink{class_binary_tree_a6c9d1d57bf13ca658fe926a0c7255ecf}{node\+\_\+size} \hyperlink{class_binary_tree_aa94faf0b38b03477896a2e317035ce4b}{size} (void)
+\item 
+\hyperlink{class_binary_tree_a6c9d1d57bf13ca658fe926a0c7255ecf}{node\+\_\+size} \hyperlink{class_binary_tree_a8db912740f7cbedb56799a59652ff80e}{height} (void)
+\item 
+\hyperlink{class_binary_tree_a6c9d1d57bf13ca658fe926a0c7255ecf}{node\+\_\+size} \hyperlink{class_binary_tree_ac1ac7f0c60b0ada90f726ed4b5b391cd}{width} (void)
+\item 
+void \hyperlink{class_binary_tree_a67e010089a20bbcc7bd282dd0759167d}{print} (void)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_binary_tree_a35ef67d8ee2843144c5c309c5a6ecd5b}{B\+T\+Node\+\_\+ptr} \hyperlink{class_binary_tree_a46ac40cb1527a3f22336588f08c55c47}{make\+One\+Node} (T data)
+\item 
+\hyperlink{class_binary_tree_a35ef67d8ee2843144c5c309c5a6ecd5b}{B\+T\+Node\+\_\+ptr} \hyperlink{class_binary_tree_a0cbb93d97da33b5b8e5d3d1cc39b273c}{get\+Left\+Node} (\hyperlink{class_binary_tree_a35ef67d8ee2843144c5c309c5a6ecd5b}{B\+T\+Node\+\_\+ptr} parent)
+\item 
+\hyperlink{class_binary_tree_a35ef67d8ee2843144c5c309c5a6ecd5b}{B\+T\+Node\+\_\+ptr} \hyperlink{class_binary_tree_a4d7abf750994e1fa5c414339aff21d4b}{get\+Right\+Node} (\hyperlink{class_binary_tree_a35ef67d8ee2843144c5c309c5a6ecd5b}{B\+T\+Node\+\_\+ptr} parent)
+\item 
+\hyperlink{class_binary_tree_a35ef67d8ee2843144c5c309c5a6ecd5b}{B\+T\+Node\+\_\+ptr} \hyperlink{class_binary_tree_a3f9a69eef172b096c09c75aa3317bda1}{insert\+Left\+Node} (\hyperlink{class_binary_tree_a35ef67d8ee2843144c5c309c5a6ecd5b}{B\+T\+Node\+\_\+ptr} parent, T data)
+\item 
+\hyperlink{class_binary_tree_a35ef67d8ee2843144c5c309c5a6ecd5b}{B\+T\+Node\+\_\+ptr} \hyperlink{class_binary_tree_ade1255b6ba7ae7af6922459c59ac2e8c}{insert\+Right\+Node} (\hyperlink{class_binary_tree_a35ef67d8ee2843144c5c309c5a6ecd5b}{B\+T\+Node\+\_\+ptr} parent, T data)
+\item 
+bool \hyperlink{class_binary_tree_ad8b70f4e657c980a41d31a7b06181ab8}{erase\+Left\+Node} (\hyperlink{class_binary_tree_a35ef67d8ee2843144c5c309c5a6ecd5b}{B\+T\+Node\+\_\+ptr} n)
+\item 
+bool \hyperlink{class_binary_tree_a7ab8cd0a33045182fe7465e7c1e2d795}{erase\+Right\+Node} (\hyperlink{class_binary_tree_a35ef67d8ee2843144c5c309c5a6ecd5b}{B\+T\+Node\+\_\+ptr} n)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_binary_tree_a35ef67d8ee2843144c5c309c5a6ecd5b}{B\+T\+Node\+\_\+ptr} \hyperlink{class_binary_tree_a199fe7180a65cb3fd98939bf1389feb8}{root\+Node}
+\item 
+\hyperlink{class_binary_tree_a35ef67d8ee2843144c5c309c5a6ecd5b}{B\+T\+Node\+\_\+ptr} \hyperlink{class_binary_tree_a8de6e53383dad4cb80e07b361556efd5}{last\+Node}
+\item 
+bool \hyperlink{class_binary_tree_af98b75fa16f1b5789106784f8c385434}{perpect}
+\item 
+bool \hyperlink{class_binary_tree_a331f90345d6b53021945eb74a35a9d69}{full}
+\item 
+\hyperlink{class_binary_tree_a6c9d1d57bf13ca658fe926a0c7255ecf}{node\+\_\+size} \hyperlink{class_binary_tree_ab81143527ccb89d1d804477ab04dce4e}{B\+T\+Size}
+\item 
+\hyperlink{class_binary_tree_a6c9d1d57bf13ca658fe926a0c7255ecf}{node\+\_\+size} \hyperlink{class_binary_tree_a0497a11fec63475eb2d35f56bd990fc9}{childable}
+\item 
+\hyperlink{class_binary_tree_a6c9d1d57bf13ca658fe926a0c7255ecf}{node\+\_\+size} \hyperlink{class_binary_tree_a2917f2e27810e6ddbb91ab01d0121a78}{B\+T\+Height}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_binary_tree_a626c02fa72521fa5977d10d8785552f7}\label{class_binary_tree_a626c02fa72521fa5977d10d8785552f7}} 
+\index{Binary\+Tree@{Binary\+Tree}!B\+T\+Node@{B\+T\+Node}}
+\index{B\+T\+Node@{B\+T\+Node}!Binary\+Tree@{Binary\+Tree}}
+\subsubsection{\texorpdfstring{B\+T\+Node}{BTNode}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+typedef struct \hyperlink{struct_binary_tree_1_1st_b_t_node}{st\+B\+T\+Node} \hyperlink{class_binary_tree}{Binary\+Tree}$<$ T $>$\+::\hyperlink{class_binary_tree_a626c02fa72521fa5977d10d8785552f7}{B\+T\+Node}}
+
+\mbox{\Hypertarget{class_binary_tree_a35ef67d8ee2843144c5c309c5a6ecd5b}\label{class_binary_tree_a35ef67d8ee2843144c5c309c5a6ecd5b}} 
+\index{Binary\+Tree@{Binary\+Tree}!B\+T\+Node\+\_\+ptr@{B\+T\+Node\+\_\+ptr}}
+\index{B\+T\+Node\+\_\+ptr@{B\+T\+Node\+\_\+ptr}!Binary\+Tree@{Binary\+Tree}}
+\subsubsection{\texorpdfstring{B\+T\+Node\+\_\+ptr}{BTNode\_ptr}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+typedef struct \hyperlink{struct_binary_tree_1_1st_b_t_node}{st\+B\+T\+Node}$\ast$ \hyperlink{class_binary_tree}{Binary\+Tree}$<$ T $>$\+::\hyperlink{class_binary_tree_a35ef67d8ee2843144c5c309c5a6ecd5b}{B\+T\+Node\+\_\+ptr}}
+
+\mbox{\Hypertarget{class_binary_tree_a6c9d1d57bf13ca658fe926a0c7255ecf}\label{class_binary_tree_a6c9d1d57bf13ca658fe926a0c7255ecf}} 
+\index{Binary\+Tree@{Binary\+Tree}!node\+\_\+size@{node\+\_\+size}}
+\index{node\+\_\+size@{node\+\_\+size}!Binary\+Tree@{Binary\+Tree}}
+\subsubsection{\texorpdfstring{node\+\_\+size}{node\_size}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+typedef unsigned int \hyperlink{class_binary_tree}{Binary\+Tree}$<$ T $>$\+::\hyperlink{class_binary_tree_a6c9d1d57bf13ca658fe926a0c7255ecf}{node\+\_\+size}}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_binary_tree_a9202cce23960faf8f647c6765decccd4}\label{class_binary_tree_a9202cce23960faf8f647c6765decccd4}} 
+\index{Binary\+Tree@{Binary\+Tree}!Binary\+Tree@{Binary\+Tree}}
+\index{Binary\+Tree@{Binary\+Tree}!Binary\+Tree@{Binary\+Tree}}
+\subsubsection{\texorpdfstring{Binary\+Tree()}{BinaryTree()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_binary_tree}{Binary\+Tree}$<$ T $>$\+::\hyperlink{class_binary_tree}{Binary\+Tree} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_binary_tree_a390c319c0b28b958463851119edb8af3}\label{class_binary_tree_a390c319c0b28b958463851119edb8af3}} 
+\index{Binary\+Tree@{Binary\+Tree}!````~Binary\+Tree@{$\sim$\+Binary\+Tree}}
+\index{````~Binary\+Tree@{$\sim$\+Binary\+Tree}!Binary\+Tree@{Binary\+Tree}}
+\subsubsection{\texorpdfstring{$\sim$\+Binary\+Tree()}{~BinaryTree()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_binary_tree}{Binary\+Tree}$<$ T $>$\+::$\sim$\hyperlink{class_binary_tree}{Binary\+Tree} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_binary_tree_a5d45e29e4a1fae4a7c5e9810b5d04475}\label{class_binary_tree_a5d45e29e4a1fae4a7c5e9810b5d04475}} 
+\index{Binary\+Tree@{Binary\+Tree}!add@{add}}
+\index{add@{add}!Binary\+Tree@{Binary\+Tree}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+bool \hyperlink{class_binary_tree}{Binary\+Tree}$<$ T $>$\+::add (\begin{DoxyParamCaption}\item[{T}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_binary_tree_a83692b11e275f9843f74218aca54f939}\label{class_binary_tree_a83692b11e275f9843f74218aca54f939}} 
+\index{Binary\+Tree@{Binary\+Tree}!clear@{clear}}
+\index{clear@{clear}!Binary\+Tree@{Binary\+Tree}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \hyperlink{class_binary_tree}{Binary\+Tree}$<$ T $>$\+::clear (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_binary_tree_a389dc4035bb6b6f1d8ca160cc487955c}\label{class_binary_tree_a389dc4035bb6b6f1d8ca160cc487955c}} 
+\index{Binary\+Tree@{Binary\+Tree}!erase@{erase}}
+\index{erase@{erase}!Binary\+Tree@{Binary\+Tree}}
+\subsubsection{\texorpdfstring{erase()}{erase()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \hyperlink{class_binary_tree}{Binary\+Tree}$<$ T $>$\+::erase (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_binary_tree_ad8b70f4e657c980a41d31a7b06181ab8}\label{class_binary_tree_ad8b70f4e657c980a41d31a7b06181ab8}} 
+\index{Binary\+Tree@{Binary\+Tree}!erase\+Left\+Node@{erase\+Left\+Node}}
+\index{erase\+Left\+Node@{erase\+Left\+Node}!Binary\+Tree@{Binary\+Tree}}
+\subsubsection{\texorpdfstring{erase\+Left\+Node()}{eraseLeftNode()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \hyperlink{class_binary_tree}{Binary\+Tree}$<$ T $>$\+::erase\+Left\+Node (\begin{DoxyParamCaption}\item[{\hyperlink{class_binary_tree_a35ef67d8ee2843144c5c309c5a6ecd5b}{B\+T\+Node\+\_\+ptr}}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_binary_tree_a7ab8cd0a33045182fe7465e7c1e2d795}\label{class_binary_tree_a7ab8cd0a33045182fe7465e7c1e2d795}} 
+\index{Binary\+Tree@{Binary\+Tree}!erase\+Right\+Node@{erase\+Right\+Node}}
+\index{erase\+Right\+Node@{erase\+Right\+Node}!Binary\+Tree@{Binary\+Tree}}
+\subsubsection{\texorpdfstring{erase\+Right\+Node()}{eraseRightNode()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \hyperlink{class_binary_tree}{Binary\+Tree}$<$ T $>$\+::erase\+Right\+Node (\begin{DoxyParamCaption}\item[{\hyperlink{class_binary_tree_a35ef67d8ee2843144c5c309c5a6ecd5b}{B\+T\+Node\+\_\+ptr}}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_binary_tree_ab428c078bc0d60bc99ebd6eebfb5bd89}\label{class_binary_tree_ab428c078bc0d60bc99ebd6eebfb5bd89}} 
+\index{Binary\+Tree@{Binary\+Tree}!first@{first}}
+\index{first@{first}!Binary\+Tree@{Binary\+Tree}}
+\subsubsection{\texorpdfstring{first()}{first()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \hyperlink{class_binary_tree}{Binary\+Tree}$<$ T $>$\+::first (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_binary_tree_a0cbb93d97da33b5b8e5d3d1cc39b273c}\label{class_binary_tree_a0cbb93d97da33b5b8e5d3d1cc39b273c}} 
+\index{Binary\+Tree@{Binary\+Tree}!get\+Left\+Node@{get\+Left\+Node}}
+\index{get\+Left\+Node@{get\+Left\+Node}!Binary\+Tree@{Binary\+Tree}}
+\subsubsection{\texorpdfstring{get\+Left\+Node()}{getLeftNode()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\hyperlink{class_binary_tree}{Binary\+Tree}$<$ T $>$\+::\hyperlink{class_binary_tree_a35ef67d8ee2843144c5c309c5a6ecd5b}{B\+T\+Node\+\_\+ptr} \hyperlink{class_binary_tree}{Binary\+Tree}$<$ T $>$\+::get\+Left\+Node (\begin{DoxyParamCaption}\item[{\hyperlink{class_binary_tree_a35ef67d8ee2843144c5c309c5a6ecd5b}{B\+T\+Node\+\_\+ptr}}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_binary_tree_a4d7abf750994e1fa5c414339aff21d4b}\label{class_binary_tree_a4d7abf750994e1fa5c414339aff21d4b}} 
+\index{Binary\+Tree@{Binary\+Tree}!get\+Right\+Node@{get\+Right\+Node}}
+\index{get\+Right\+Node@{get\+Right\+Node}!Binary\+Tree@{Binary\+Tree}}
+\subsubsection{\texorpdfstring{get\+Right\+Node()}{getRightNode()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{class_binary_tree}{Binary\+Tree}$<$ T $>$\+::\hyperlink{class_binary_tree_a35ef67d8ee2843144c5c309c5a6ecd5b}{B\+T\+Node\+\_\+ptr} \hyperlink{class_binary_tree}{Binary\+Tree}$<$ T $>$\+::get\+Right\+Node (\begin{DoxyParamCaption}\item[{\hyperlink{class_binary_tree_a35ef67d8ee2843144c5c309c5a6ecd5b}{B\+T\+Node\+\_\+ptr}}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_binary_tree_a8db912740f7cbedb56799a59652ff80e}\label{class_binary_tree_a8db912740f7cbedb56799a59652ff80e}} 
+\index{Binary\+Tree@{Binary\+Tree}!height@{height}}
+\index{height@{height}!Binary\+Tree@{Binary\+Tree}}
+\subsubsection{\texorpdfstring{height()}{height()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\hyperlink{class_binary_tree}{Binary\+Tree}$<$ T $>$\+::\hyperlink{class_binary_tree_a6c9d1d57bf13ca658fe926a0c7255ecf}{node\+\_\+size} \hyperlink{class_binary_tree}{Binary\+Tree}$<$ T $>$\+::height (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_binary_tree_a3f9a69eef172b096c09c75aa3317bda1}\label{class_binary_tree_a3f9a69eef172b096c09c75aa3317bda1}} 
+\index{Binary\+Tree@{Binary\+Tree}!insert\+Left\+Node@{insert\+Left\+Node}}
+\index{insert\+Left\+Node@{insert\+Left\+Node}!Binary\+Tree@{Binary\+Tree}}
+\subsubsection{\texorpdfstring{insert\+Left\+Node()}{insertLeftNode()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{class_binary_tree}{Binary\+Tree}$<$ T $>$\+::\hyperlink{class_binary_tree_a35ef67d8ee2843144c5c309c5a6ecd5b}{B\+T\+Node\+\_\+ptr} \hyperlink{class_binary_tree}{Binary\+Tree}$<$ T $>$\+::insert\+Left\+Node (\begin{DoxyParamCaption}\item[{\hyperlink{class_binary_tree_a35ef67d8ee2843144c5c309c5a6ecd5b}{B\+T\+Node\+\_\+ptr}}]{parent,  }\item[{T}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_binary_tree_ade1255b6ba7ae7af6922459c59ac2e8c}\label{class_binary_tree_ade1255b6ba7ae7af6922459c59ac2e8c}} 
+\index{Binary\+Tree@{Binary\+Tree}!insert\+Right\+Node@{insert\+Right\+Node}}
+\index{insert\+Right\+Node@{insert\+Right\+Node}!Binary\+Tree@{Binary\+Tree}}
+\subsubsection{\texorpdfstring{insert\+Right\+Node()}{insertRightNode()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{class_binary_tree}{Binary\+Tree}$<$ T $>$\+::\hyperlink{class_binary_tree_a35ef67d8ee2843144c5c309c5a6ecd5b}{B\+T\+Node\+\_\+ptr} \hyperlink{class_binary_tree}{Binary\+Tree}$<$ T $>$\+::insert\+Right\+Node (\begin{DoxyParamCaption}\item[{\hyperlink{class_binary_tree_a35ef67d8ee2843144c5c309c5a6ecd5b}{B\+T\+Node\+\_\+ptr}}]{parent,  }\item[{T}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_binary_tree_a9e4e37cf93a96c3177d8bf00ee1ba664}\label{class_binary_tree_a9e4e37cf93a96c3177d8bf00ee1ba664}} 
+\index{Binary\+Tree@{Binary\+Tree}!is\+Data@{is\+Data}}
+\index{is\+Data@{is\+Data}!Binary\+Tree@{Binary\+Tree}}
+\subsubsection{\texorpdfstring{is\+Data()}{isData()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \hyperlink{class_binary_tree}{Binary\+Tree}$<$ T $>$\+::is\+Data (\begin{DoxyParamCaption}\item[{T}]{e }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_binary_tree_a1328c1a57e0e5e0a18440a95d3e10e89}\label{class_binary_tree_a1328c1a57e0e5e0a18440a95d3e10e89}} 
+\index{Binary\+Tree@{Binary\+Tree}!last@{last}}
+\index{last@{last}!Binary\+Tree@{Binary\+Tree}}
+\subsubsection{\texorpdfstring{last()}{last()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \hyperlink{class_binary_tree}{Binary\+Tree}$<$ T $>$\+::last (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_binary_tree_a46ac40cb1527a3f22336588f08c55c47}\label{class_binary_tree_a46ac40cb1527a3f22336588f08c55c47}} 
+\index{Binary\+Tree@{Binary\+Tree}!make\+One\+Node@{make\+One\+Node}}
+\index{make\+One\+Node@{make\+One\+Node}!Binary\+Tree@{Binary\+Tree}}
+\subsubsection{\texorpdfstring{make\+One\+Node()}{makeOneNode()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{class_binary_tree}{Binary\+Tree}$<$ T $>$\+::\hyperlink{class_binary_tree_a35ef67d8ee2843144c5c309c5a6ecd5b}{B\+T\+Node\+\_\+ptr} \hyperlink{class_binary_tree}{Binary\+Tree}$<$ T $>$\+::make\+One\+Node (\begin{DoxyParamCaption}\item[{T}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_binary_tree_a67e010089a20bbcc7bd282dd0759167d}\label{class_binary_tree_a67e010089a20bbcc7bd282dd0759167d}} 
+\index{Binary\+Tree@{Binary\+Tree}!print@{print}}
+\index{print@{print}!Binary\+Tree@{Binary\+Tree}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \hyperlink{class_binary_tree}{Binary\+Tree}$<$ T $>$\+::print (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_binary_tree_aa94faf0b38b03477896a2e317035ce4b}\label{class_binary_tree_aa94faf0b38b03477896a2e317035ce4b}} 
+\index{Binary\+Tree@{Binary\+Tree}!size@{size}}
+\index{size@{size}!Binary\+Tree@{Binary\+Tree}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\hyperlink{class_binary_tree}{Binary\+Tree}$<$ T $>$\+::\hyperlink{class_binary_tree_a6c9d1d57bf13ca658fe926a0c7255ecf}{node\+\_\+size} \hyperlink{class_binary_tree}{Binary\+Tree}$<$ T $>$\+::size (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_binary_tree_ac1ac7f0c60b0ada90f726ed4b5b391cd}\label{class_binary_tree_ac1ac7f0c60b0ada90f726ed4b5b391cd}} 
+\index{Binary\+Tree@{Binary\+Tree}!width@{width}}
+\index{width@{width}!Binary\+Tree@{Binary\+Tree}}
+\subsubsection{\texorpdfstring{width()}{width()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\hyperlink{class_binary_tree}{Binary\+Tree}$<$ T $>$\+::\hyperlink{class_binary_tree_a6c9d1d57bf13ca658fe926a0c7255ecf}{node\+\_\+size} \hyperlink{class_binary_tree}{Binary\+Tree}$<$ T $>$\+::width (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_binary_tree_a2917f2e27810e6ddbb91ab01d0121a78}\label{class_binary_tree_a2917f2e27810e6ddbb91ab01d0121a78}} 
+\index{Binary\+Tree@{Binary\+Tree}!B\+T\+Height@{B\+T\+Height}}
+\index{B\+T\+Height@{B\+T\+Height}!Binary\+Tree@{Binary\+Tree}}
+\subsubsection{\texorpdfstring{B\+T\+Height}{BTHeight}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{class_binary_tree_a6c9d1d57bf13ca658fe926a0c7255ecf}{node\+\_\+size} \hyperlink{class_binary_tree}{Binary\+Tree}$<$ T $>$\+::B\+T\+Height\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_binary_tree_ab81143527ccb89d1d804477ab04dce4e}\label{class_binary_tree_ab81143527ccb89d1d804477ab04dce4e}} 
+\index{Binary\+Tree@{Binary\+Tree}!B\+T\+Size@{B\+T\+Size}}
+\index{B\+T\+Size@{B\+T\+Size}!Binary\+Tree@{Binary\+Tree}}
+\subsubsection{\texorpdfstring{B\+T\+Size}{BTSize}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{class_binary_tree_a6c9d1d57bf13ca658fe926a0c7255ecf}{node\+\_\+size} \hyperlink{class_binary_tree}{Binary\+Tree}$<$ T $>$\+::B\+T\+Size\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_binary_tree_a0497a11fec63475eb2d35f56bd990fc9}\label{class_binary_tree_a0497a11fec63475eb2d35f56bd990fc9}} 
+\index{Binary\+Tree@{Binary\+Tree}!childable@{childable}}
+\index{childable@{childable}!Binary\+Tree@{Binary\+Tree}}
+\subsubsection{\texorpdfstring{childable}{childable}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{class_binary_tree_a6c9d1d57bf13ca658fe926a0c7255ecf}{node\+\_\+size} \hyperlink{class_binary_tree}{Binary\+Tree}$<$ T $>$\+::childable\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_binary_tree_a331f90345d6b53021945eb74a35a9d69}\label{class_binary_tree_a331f90345d6b53021945eb74a35a9d69}} 
+\index{Binary\+Tree@{Binary\+Tree}!full@{full}}
+\index{full@{full}!Binary\+Tree@{Binary\+Tree}}
+\subsubsection{\texorpdfstring{full}{full}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \hyperlink{class_binary_tree}{Binary\+Tree}$<$ T $>$\+::full\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_binary_tree_a8de6e53383dad4cb80e07b361556efd5}\label{class_binary_tree_a8de6e53383dad4cb80e07b361556efd5}} 
+\index{Binary\+Tree@{Binary\+Tree}!last\+Node@{last\+Node}}
+\index{last\+Node@{last\+Node}!Binary\+Tree@{Binary\+Tree}}
+\subsubsection{\texorpdfstring{last\+Node}{lastNode}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{class_binary_tree_a35ef67d8ee2843144c5c309c5a6ecd5b}{B\+T\+Node\+\_\+ptr} \hyperlink{class_binary_tree}{Binary\+Tree}$<$ T $>$\+::last\+Node\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_binary_tree_af98b75fa16f1b5789106784f8c385434}\label{class_binary_tree_af98b75fa16f1b5789106784f8c385434}} 
+\index{Binary\+Tree@{Binary\+Tree}!perpect@{perpect}}
+\index{perpect@{perpect}!Binary\+Tree@{Binary\+Tree}}
+\subsubsection{\texorpdfstring{perpect}{perpect}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \hyperlink{class_binary_tree}{Binary\+Tree}$<$ T $>$\+::perpect\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_binary_tree_a199fe7180a65cb3fd98939bf1389feb8}\label{class_binary_tree_a199fe7180a65cb3fd98939bf1389feb8}} 
+\index{Binary\+Tree@{Binary\+Tree}!root\+Node@{root\+Node}}
+\index{root\+Node@{root\+Node}!Binary\+Tree@{Binary\+Tree}}
+\subsubsection{\texorpdfstring{root\+Node}{rootNode}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{class_binary_tree_a35ef67d8ee2843144c5c309c5a6ecd5b}{B\+T\+Node\+\_\+ptr} \hyperlink{class_binary_tree}{Binary\+Tree}$<$ T $>$\+::root\+Node\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_binary_tree_8hpp}{Binary\+Tree.\+hpp}\end{DoxyCompactItemize}

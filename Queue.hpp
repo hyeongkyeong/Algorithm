@@ -31,6 +31,7 @@ public:
 	bool isEmpty(void);
 	void print(void);
 	void printReverse(void);
+
 };
 
 
@@ -43,7 +44,7 @@ Queue<T>::Queue() {
 
 template<class T>
 Queue<T>::~Queue() {
-	clear();
+	this->clear();
 }
 
 template<class T>
@@ -52,32 +53,32 @@ void Queue<T>::push(T e) {
 	LinkedList<T>::append(e);
 
 }
+template<class T>
+T Queue<T>::pop(void) {
+	T data;
+	if(size()>0){
+		data = LinkedList<T>::at(0);
+		LinkedList<T>::removeFirst();
+	}
+	return (data);
+}
+
+template<class T>
+T Queue<T>::peek(void) {
+	T data;
+	if(size()>0){
+		data = LinkedList<T>::at(0);
+	}
+	return (data);
+}
 
 template<class T>
 void Queue<T>::enqueue(T e) {
 	push(e);
 }
-
-template<class T>
-T Queue<T>::pop(void) {
-
-	T data;
-	int lastIndex = (int)(LinkedList<T>::lastIndex);
-	data = LinkedList<T>::at(lastIndex);
-	LinkedList<T>::removeLast();
-
-	return (data);
-}
-
 template<class T>
 T Queue<T>::dequeue(void) {
 	return (pop());
-}
-
-template<class T>
-T Queue<T>::peek(void) {
-
-	return (LinkedList<T>::at(LinkedList<T>::lastIndex));
 }
 
 template<class T>
@@ -85,8 +86,6 @@ void Queue<T>::clear(void) {
 
 	LinkedList<T>::removeAll();
 }
-
-
 template<class T>
 size_t Queue<T>::size(void) {
 	/*return (topIndex+1); */

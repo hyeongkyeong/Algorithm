@@ -1,12 +1,12 @@
 /*
- * Tree.h
+ * Tree.hpp
  *
  *  Created on: 2019. 2. 6.
  *      Author: Hyeongkyeong Seo
  */
 
-#ifndef TREE_H_
-#define TREE_H_
+#ifndef TREE_HPP_
+#define TREE_HPP_
 
 #include <cstddef>
 #include <cstdbool>
@@ -36,4 +36,4 @@ Tree<T>::~Tree()
 
 
 
-#endif /* TREE_H_ */
+#endif /* TREE_HPP_ */

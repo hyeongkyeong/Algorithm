@@ -5,12 +5,12 @@
  *      Author: Hyeongkyeong Seo
  */
 
-#define ARRAYLIST_TEST		1
+#define ARRAYLIST_TEST		0
 #define LINKEDLIST_TEST		0
 #define STACK_TEST			0
 #define QUEUE_TEST			0
 #define MAP_TEST			0
-#define BINARYTREE_TEST		0
+#define BINARYTREE_TEST		1
 #define BINARYHEAP_TEST		0
 #define TREE_TEST			0
 #define GRAPH_TEST			0

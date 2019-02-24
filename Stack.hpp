@@ -57,17 +57,20 @@ template<class T>
 T Stack<T>::pop(void) {
 
 	T data;
-	int lastIndex = (int)(LinkedList<T>::lastIndex);
-	data = LinkedList<T>::at(lastIndex);
-	LinkedList<T>::removeLast();
-
+	if(size()>0){
+		data = LinkedList<T>::at((int)(LinkedList<T>::lastIndex));
+		LinkedList<T>::removeLast();
+	}
 	return (data);
 }
 
 template<class T>
 T Stack<T>::peek(void) {
-
-	return (LinkedList<T>::at(LinkedList<T>::lastIndex));
+	T data;
+	if(size()>0){
+		data = LinkedList<T>::at((int)(LinkedList<T>::lastIndex));
+	}
+	return (data);
 }
 
 template<class T>

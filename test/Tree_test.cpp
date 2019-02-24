@@ -5,7 +5,7 @@
  *      Author: Hyeongkyeong Seo
  */
 
-#include "Tree.h"
+#include <Tree.hpp>
 
 using namespace std;
 void Tree_test(void){

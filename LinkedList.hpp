@@ -26,10 +26,21 @@ protected:
 	typedef struct stNode Node;
 	typedef struct stNode* Node_ptr;
 
-
+private:
 	Node head;
 	Node tail;
 	int lastIndex;
+	Node *getNode(int idx){
+		Node *curr=head.next;
+		if((idx>=0) && (idx<=lastIndex)){
+			for(int i=0;i<idx;i++){
+				curr = curr->next;
+			}
+		}else{
+			curr=NULL;
+		}
+		return (curr);
+	}
 
 public:
 	LinkedList();
@@ -53,18 +64,7 @@ public:
 	void print(void);
 	void printReverse(void);
 
-private:
-	Node *getNode(int idx){
-		Node *curr=head.next;
-		if((idx>=0) && (idx<=lastIndex)){
-			for(int i=0;i<idx;i++){
-				curr  = curr->next;
-			}
-		}else{
-			curr=NULL;
-		}
-		return (curr);
-	}
+
 };
 
 
