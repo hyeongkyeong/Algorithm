@@ -1,86 +1,13 @@
-# Eclipse
-.metadata
-.project
-bin/
-tmp/
-Debug/
-*.tmp
-*.bak
-*.swp
-*~.nib
-local.properties
-.settings/
-.loadpath
-.recommenders
-
-#Debugging
-*.stackdump
-
-# External tool builders
-.externalToolBuilders/
-
-# Locally stored "Eclipse launch configurations"
-*.launch
-
-# PyDev specific (Python IDE for Eclipse)
-*.pydevproject
-
-# CDT-specific (C/C++ Development Tooling)
-.cproject
-
-# CDT- autotools
-.autotools
-
-# Java annotation processor (APT)
-.factorypath
-
-# PDT-specific (PHP Development Tools)
-.buildpath
-
-# sbteclipse plugin
-.target
-
-# Tern plugin
-.tern-project
-
-# TeXlipse plugin
-.texlipse
-
-# STS (Spring Tool Suite)
-.springBeans
-
-# Code Recommenders
-.recommenders/
-
-# Annotation Processing
-.apt_generated/
-
-# Scala IDE specific (Scala & Java development for Eclipse)
-.cache-main
-.scala_dependencies
-.worksheet
-
-# Prerequisites
-*.d
-
 # Compiled Object files
 *.slo
 *.lo
 *.o
 *.obj
 
-# Precompiled Headers
-*.gch
-*.pch
-
 # Compiled Dynamic libraries
 *.so
 *.dylib
 *.dll
-
-# Fortran module files
-*.mod
-*.smod
 
 # Compiled Static libraries
 *.lai
@@ -93,6 +20,17 @@ local.properties
 *.out
 *.app
 
+# Eclipse
+.metadata
+.project
+.cproject
+Release/*.xml
+Debug/*.xml
+
+
+#Debugging
+*.stackdump
+
 # Doxygen
 *.Algorithm
 html/
@@ -101,3 +39,6 @@ latex/
 # Etc
 RemoteSystemsTempFiles/
 *.QIK
+*.bak
+*.tmp
+/Debug/
