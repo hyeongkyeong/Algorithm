@@ -22,6 +22,7 @@
 
 # Eclipse
 .metadata
+.settings
 .project
 .cproject
 Release/*.xml
