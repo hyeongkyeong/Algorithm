@@ -1,15 +1,20 @@
-/*
- * ArrayList_test.cpp
- *
- *  Created on: 2019. 1. 27.
- *      Author: Hyeongkyeong Seo
- */
-
+#include <gtest/gtest.h>
+#include <cstddef>
 #include <ArrayList.hpp>
-using namespace std;
-void ArrayList_test(void){
 
+class ArrayListTest: public ::testing::Test {
+protected:
 	ArrayList<int> data1;
+	ArrayList<int> data2;
+	ArrayList<int> *data3;
+	void SetUp() override {
+	}
+
+	void TearDown() override {
+	}
+
+};
+TEST_F(ArrayListTest, basic) {
 
 	data1.add(11);
 	data1.add(11);
@@ -22,24 +27,26 @@ void ArrayList_test(void){
 	data1.addFirst(100);
 
 
-	data1.print();
+	int actual1=data1.at(4);
+	int expected1=22;
+	ASSERT_EQ(expected1, actual1);
 
-	cout<<"size:"<<data1.size()<<endl;
-	cout<<"indexOf(22):"<<data1.indexOf(22)<<endl;
-	cout<<"lastIndexOf(22):"<<data1.lastIndexOf(22)<<endl;
-	cout<<"at(5):"<<data1.at(5)<<endl;
+	int actual2=data1.indexOf(22);
+	int expected2=4;
+	ASSERT_EQ(expected2, actual2);
 
+	int actual3=data1.lastIndexOf(22);
+	int expected3=4;
+	ASSERT_EQ(expected3, actual3);
 
+	size_t actual4 = data1.size();
+	size_t expected4 = 6;
+	ASSERT_EQ(expected4, actual4);
 
-	ArrayList<string> data2;
-	data2.add("steve");
-	data2.add("crystal");
-	data2.add("hyeongkyeong");
-	data2.print();
-	cout<<"size: "<<data2.size()<<endl;
-	cout<<"indexOf(hyeongkyeong): "<<data2.indexOf("hyeongkyeong")<<endl;
-	data2.at(2);
-	data2.removeAll();
-	data2.print();
+	bool actual5 = data1.isEmpty();
+	bool expected5 = false;
+	ASSERT_EQ(expected5, actual5);
+
 
 }
+

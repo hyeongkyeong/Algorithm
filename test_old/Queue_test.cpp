@@ -1,3 +1,4 @@
+#ifndef DEBUG
 /*
  * Stack_test.cpp
  *
@@ -22,3 +23,5 @@ void Queue_test(void){
 	cout<<data2.pop()<<endl;
 	data2.print();
 }
+
+#endif

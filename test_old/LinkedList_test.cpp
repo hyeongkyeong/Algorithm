@@ -1,3 +1,4 @@
+#ifndef DEBUG
 /*
  * ArrayList_test.cpp
  *
@@ -40,4 +41,4 @@ void LinkedList_test(void){
 		cout<<data2.indexOf((string)"hkseo")<<endl;
 	}
 
-
+#endif

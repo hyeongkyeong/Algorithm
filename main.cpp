@@ -1,3 +1,5 @@
+#ifndef DEBUG
+
 /*
  * main.cpp
  *
@@ -6,14 +8,10 @@
  */
 
 #define ARRAYLIST_TEST		0
-#define LINKEDLIST_TEST		0
-#define STACK_TEST			0
-#define QUEUE_TEST			0
-#define MAP_TEST			0
 #define BINARYTREE_TEST		1
-#define BINARYHEAP_TEST		0
-#define TREE_TEST			0
-#define GRAPH_TEST			0
+#define LINKEDLIST_TEST		0
+#define MAP_TEST			0
+#define QUEUE_TEST			0
 
 int main(void){
 
@@ -25,10 +23,6 @@ int main(void){
 	extern void LinkedList_test(void);
 	LinkedList_test();
 #endif /* (LINKEDLIST_TEST==1) */
-#if (STACK_TEST==1)
-	extern void Stack_test(void);
-	Stack_test();
-#endif /* (STACK_TEST==1) */
 #if (QUEUE_TEST==1)
 	extern void Queue_test(void);
 	Queue_test();
@@ -41,14 +35,7 @@ int main(void){
 	BinaryTree_test();
 #endif /* (BINARYTREE_TEST==1) */
 
-#if (TREE_TEST==1)
-	extern void Tree_test(void);
-	Tree_test();
-#endif /* (TREE_TEST==1) */
-#if (GRAPH_TEST==1)
-	extern void Map_test(void);
-	Map_test();
-#endif /* (GRAPH_TEST==1) */
 
 }
 
+#endif /* DEBUG */

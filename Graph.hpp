@@ -11,12 +11,22 @@
 #include <cstddef>
 #include <cstdbool>
 #include <iostream>
+#include "LinkedList.hpp"
+
 
 template <class T>
-class Graph {
+class Graph  : public LinkedList<T>{
+
+
+
 public:
 	Graph();
 	virtual ~Graph();
+
+//	typedef LinkedList<T>::Node Node;
+
+	void addNode(T data);
+//	void addEdge(Node n1, Node n2);
 };
 
 

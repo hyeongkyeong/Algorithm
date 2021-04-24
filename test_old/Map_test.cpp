@@ -1,3 +1,4 @@
+#ifndef DEBUG
 /*
  * Map_test.cpp
  *
@@ -69,3 +70,4 @@ void Map_test(void){
 	//cout<<"kvm3(1002,1002): "<<kvm3(1002,1002)<<endl;
 	//cout<<"kvm3(1002,1001): "<<kvm3(1002,1001)<<endl;
 }
+#endif /* DEBUG */

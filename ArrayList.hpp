@@ -67,7 +67,7 @@ ArrayList<T>::~ArrayList() {
 }
 
 template <class T>
-unsigned int ArrayList<T>::size(void) {
+size_t ArrayList<T>::size(void) {
 
 	return ((unsigned int)lastIndex + 1);
 }

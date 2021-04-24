@@ -1,3 +1,4 @@
+#ifndef DEBUG
 /*
  * Tree_test.cpp
  *
@@ -48,3 +49,4 @@ void BinaryTree_test(void){
 	data1.print();
 
 }
+#endif

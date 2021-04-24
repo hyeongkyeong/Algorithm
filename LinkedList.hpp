@@ -23,6 +23,8 @@ protected:
 		Node_ptr past;
 		Node_ptr next;
 	};
+
+public:
 	typedef struct stNode Node;
 	typedef struct stNode* Node_ptr;
 
